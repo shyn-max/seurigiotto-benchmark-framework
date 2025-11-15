@@ -1,0 +1,33 @@
+# ===================================================================
+# .gitignore for seurigiotto-benchmark
+# Curated by Mike for Ángel
+# ===================================================================
+
+# R & RStudio Environment Files
+# -----------------------------
+# History and session data
+.Rhistory
+.RData
+.Renviron
+.Rproj.user/
+*.Rproj
+
+# Generated Output Directories
+# ----------------------------
+# These folders will contain all outputs from the scripts (plots, RDS, etc.)
+# IMPORTANT: This is the key rule to keep the repo clean.
+/results/
+/TFM_ResultosFinales/ # Keep the old one just in case
+
+# System Junk Files
+# -----------------
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# General temp/backup files
+*.tmp
+*.bak
+*.swp
