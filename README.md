@@ -1,9 +1,15 @@
-# seurigiotto-benchmark
+# seurigiotto-benchmark-framework
 
+![seurigiotto-framework](https://img.shields.io/badge/seurigiotto-framework-9cf?colorA=7A009C&colorB=4CAF50&logo=r)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17628633.svg)](https://doi.org/10.5281/zenodo.17628633)
 ![R Version](https://img.shields.io/badge/R-4.4%2B-blue?logo=r)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/Nuiter/seurigiotto-benchmark)
+![GitHub last commit](https://img.shields.io/github/last-commit/Nuiter/seurigiotto-benchmark-framework)
+
+![Seurat](https://img.shields.io/badge/Built%20with-Seurat-2777B6?logo=r)
+![Giotto](https://img.shields.io/badge/Built%20with-Giotto-4CAF50?logo=r)
+
 
 **Optimized pipelines for Spatial Transcriptomics (ST) data analysis using Seurat & Giotto, designed for reproducible benchmarking and biological insight.**
 
@@ -54,8 +60,8 @@ Developed as part of a Master's Thesis, this project is structured as a robust r
 ### Getting Started
 ```
 #### 1. Clone the Repository
-git clone https://github.com/Nuiter/seurigiotto-benchmark.git
-cd seurigiotto-benchmark
+git clone https://github.com/Nuiter/seurigiotto-benchmark-framework.git
+cd seurigiotto-benchmark-framework
 ```
 #### 2. Install Dependencies
 ## Reproducibility snapshot
@@ -123,6 +129,7 @@ All outputs (figures, tables, logs) will be saved in the /results directory in o
 ### Citation
 
 If you use this workflow or find the code helpful in your research, please cite this repository.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17628633.svg)](https://doi.org/10.5281/zenodo.17628633)
 
 Author: Ángel I. Pérez Santiago  
 Project: MSc in Bioinformatics & Biostatistics (University of Barcelona / UOC, 2025)  
